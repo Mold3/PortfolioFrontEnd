@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <title>Portfolio Web</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,17 +25,17 @@
             <h1>/Mold/</h1>
             <nav id="nav" class="">
                 <ul id="links">
-                    <li><a href="#inicio" class="seleccionado">Inicio</a></li>
-                    <li><a href="#sobremi">Sobre Mi</a></li>
-                    <li><a href="#trabajos">TRABAJOS</a></li>
-                    <li><a href="#habilidades">Habilidades</a></li>
-                    <li><a href="#contacto">Contacto</a></li>
+                    <li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)"">Inicio</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar(this)">Sobre Mi</a></li>
+                    <li><a href="#trabajos" onclick="seleccionar(this)">TRABAJOS</a></li>
+                    <li><a href="#habilidades" onclick="seleccionar(this)">Habilidades</a></li>
+                    <li><a href="#contacto" onclick="seleccionar(this)">Contacto</a></li>
                 </ul>
             </nav>
         
 
             <!-- ICONOS -->
-            <div id="icono-nav">
+            <div id="icono-nav" onclick="responsiveMenu()">
                 <i class="fa-solid fa-bars"></i>
             </div>
             <!--ICONS REDES SOCIALES-->
@@ -73,7 +73,7 @@
         </div>
     </section>
 
-    <!-- TRABAJOS -->
+    <!-- Servicios -->
     <section id="trabajos">
         <h3 class="titulo-seccion">Trabajos</h3>
         <div class="fila">
@@ -149,7 +149,7 @@
     </section>
 
     <!-- HABILIDADES -->
-    <div class="contenedor-skill" id="skills">
+    <div class="contenedor-skill" id="habilidades">
         <h3>HABILIDADES</h3> 
         <div class="skill">
             <div class="info">
@@ -164,20 +164,20 @@
         <div class="skill">
             <div class="info">
                 <p><span class="lista"></span>Javascript</p>
-                <span class="porcentaje">0%</span>
+                <span class="porcentaje">15%</span>
             </div>
             <div class="barra">
-                <div id="js" class=""></div>
+                <div id="js" class="barra-progreso2"></div>
             </div>
         </div>
 
         <div class="skill">
             <div class="info">
                 <p><span class="lista"></span>Data Base</p>
-                <span class="porcentaje">95%</span>
+                <span class="porcentaje">10%</span>
             </div>
             <div class="barra">
-                <div id="bd" class=""></div>
+                <div id="bd" class="barra-progreso3"></div>
             </div>
         </div>
 
@@ -187,7 +187,7 @@
                 <span class="porcentaje">70%</span>
             </div>
             <div class="barra">
-                <div id="ps" class=""></div>
+                <div id="ps" class="barra-progreso4"></div>
             </div>
         </div>
 
@@ -197,10 +197,144 @@
                 <span class="porcentaje">80%</span>
             </div>
             <div class="barra">
-                <div id="ingles" class=""></div>
+                <div id="ingles" class="barra-progreso5"></div>
             </div>
         </div>
     </div>
+
+    <!-- PORTFOLIO -->
+<section id="portfolio">
+    <h3 class="titulo-seccion">MIS TRABAJOS</h3>
+
+    <div class="fila">
+        <div class="proyecto">
+            <div class="overlay">
+                <img src="img/proyecto1.png" alt="">
+                <div class="info">
+                <h4>Descripcion del proyecto</h4>
+                <p>Web Desing</p>
+            </div>
+        </div>
+        </div>
+
+        <div class="proyecto">
+            <div class="overlay">
+                <img src="img/proyecto1.png"" alt="">
+                <div class="info">
+                <h4>Descripcion del proyecto</h4>
+                <p>Web Desing</p>
+            </div>
+        </div>
+        </div>
+
+        <div class="proyecto">
+            <div class="overlay">
+                <img src="img/proyecto1.png" alt="">
+                <div class="info">
+                <h4>Descripcion del proyecto</h4>
+                <p>Web Desing</p>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <div class="fila">
+        <div class="proyecto">
+            <div class="overlay">
+                <img src="img/proyecto1.png" alt="">
+                <div class="info">
+                <h4>Descripcion del proyecto</h4>
+                <p>Web Desing</p>
+            </div>
+            </div>
+        </div>
+
+        <div class="proyecto">
+            <div class="overlay">
+                <img src="img/proyecto1.png"" alt="">
+                <div class="info">
+                <h4>Descripcion del proyecto</h4>
+                <p>Web Desing</p>
+            </div>
+        </div>
+        </div>
+
+        <div class="proyecto">
+            <div class="overlay">
+                <img src="img/proyecto1.png" alt="">
+                <div class="info">
+                <h4>Descripcion del proyecto</h4>
+                <p>Web Desing</p>
+            </div>
+        </div>
+        </div>
+    </div>
+
+        <div class="fila">
+        <div class="proyecto">
+            <div class="overlay">
+                <img src="img/proyecto1.png" alt="">
+                <div class="info">
+                <h4>Descripcion del proyecto</h4>
+                <p>Web Desing</p>
+            </div>
+        </div>
+        </div>
+
+        <div class="proyecto">
+            <div class="overlay">
+                <img src="img/proyecto1.png"" alt="">
+                <div class="info">
+                <h4>Descripcion del proyecto</h4>
+                <p>Web Desing</p>
+            </div>
+        </div>
+        </div>
+
+        <div class="proyecto">
+            <div class="overlay">
+                <img src="img/proyecto1.png" alt="">
+                <div class="info">
+                <h4>Descripcion del proyecto</h4>
+                <p>Web Desing</p>
+            </div>
+        </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contacto -->
+<section id="contacto">
+    <h3 class="titulo-seccion">¡Contáctame Ahora!</h3>
+    <div class="contenedor-form">
+        <form action="">
+      <div class="fila mitad">
+        <input type="type" placeholder="Nombre Completo" class="input-mitad">
+        <input type="text" placeholder="Email" class="input-mitad">
+      </div>
+      <div class="fila">
+        <input type="text" placeholder="Asunto" class="input-full">
+      </div>
+      <div class="fila">
+        <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje..." class="input-full"></textarea>
+      </div>
+      <input type="submit" value= "Enviar Mensaje" class="btn-enviar">
+        </form>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+<p>Todos los derechos reservados - 2022</p> 
+<div class="redes">
+    <a href="#"><i class="fa-brands fa-github"></i></a>
+    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+    </div>
+    <p class="email">maauro109@gmail.com</p>
+</footer>
+
+<script src="app.js"></script>
 
 </body>
 </html>
