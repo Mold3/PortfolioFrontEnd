@@ -35,6 +35,5 @@ if (distancia_skills >=300){
     document.getElementById("bd") .classList.add("barraprogreso3");
     document.getElementById("ps") .classList.add("barraprogreso4");
     document.getElementById("ingles") .classList.add("barraprogreso5");
-
 }
 }

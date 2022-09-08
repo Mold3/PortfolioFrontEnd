@@ -120,7 +120,7 @@ justify-content: center;
     transition: .5s;
  }
  #inicio .contenido .presentacion a:hover {
-    background-color: #c957b2;
+    background-color: #9e59ee;
  }
 
  #icono-nav{
@@ -280,7 +280,7 @@ margin: 0 40px;
  /* HABILIDADES */
 
 .contenedor-skill {
-  background: linear-gradient(#eb5aafcc, rgba(33,16,16,.8)), url("img/fondo-skills.jpg");
+  background: linear-gradient(#638eddcc, rgba(39, 40, 41, 0.8)), url("img/fondo-skills.jpg");
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
@@ -482,7 +482,7 @@ margin: 0 40px;
 }
 
 #contacto .contenedor-form input,
-#contacto.contenedor-form textarea{
+#contacto .contenedor-form textarea{
   padding: 20px;
   border-radius: 20px;
   border: none;
@@ -519,6 +519,7 @@ footer {
   color: #fff;
   text-align: center;
   padding: 30px 0;
+  position: relative;
 }
 
 footer a {
@@ -533,6 +534,17 @@ footer a {
   color: rgb(201, 201, 201);
   font-size: 14px;
   margin-top: 5px;
+}
+
+.ap-img{
+  width:200px;
+  position:absolute;
+  right: 90px;
+  margin-top: 7px;
+}
+
+.ap-img img {
+  width: 100%;
 }
 
 /* Responsive */
@@ -638,4 +650,6 @@ padding: 8px;
     margin-bottom: 15px;
   }
 }
+
+
 
